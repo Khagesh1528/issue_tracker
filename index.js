@@ -1,6 +1,7 @@
 require('dotenv').config();  //Load Env
 const express = require('express');
 
+
 const db = require('./config/mongoose');
 const port = process.env.PORT || 8000;
 const app = express();
@@ -17,7 +18,7 @@ app.set('layout extractScripts', true);
 
 // set up the view engine
 app.set('view engine', 'ejs');
-app.set('views', './views');
+app.set('views', path.join(__dirname, 'views'));
 
 // use express router
 app.use('/', require('./routes'));
