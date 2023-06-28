@@ -8,12 +8,12 @@ const path = require('path');
 const expressLayouts = require('express-ejs-layouts');
 
 // app.use(express.urlencoded());
-app.use(express.static('assets'));
-app.use(expressLayouts);
+// app.use(express.static('assets'));
+// app.use(expressLayouts);
 
-// extract style and scripts from sub pages into the layout
-app.set('layout extractStyles', true);
-app.set('layout extractScripts', true);
+// // extract style and scripts from sub pages into the layout
+// app.set('layout extractStyles', true);
+// app.set('layout extractScripts', true);
 
 // set up the view engine
 app.set('view engine', 'ejs');
